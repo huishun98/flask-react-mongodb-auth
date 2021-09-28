@@ -1,6 +1,9 @@
 ## Quickstart
-1. Run `npm install`
-2. Run `npm start`
+In the client directory, run
+```
+npm install
+npm start
+```
 
 ## Issues
 1. Using class components, not functional components.
