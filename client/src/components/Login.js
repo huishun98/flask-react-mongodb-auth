@@ -13,11 +13,11 @@ class Login extends Component {
         this.onSubmit = this.onSubmit.bind(this)
     }
 
-    onChange (e) {
+    onChange(e) {
         this.setState({ [e.target.name]: e.target.value })
     }
 
-    onSubmit (e) {
+    onSubmit(e) {
         e.preventDefault()
 
         const user = {
@@ -30,11 +30,12 @@ class Login extends Component {
                 this.props.history.push(`/profile`)
             }
         }).catch((err) => {
+            console.log({ err })
             alert('Unable to log in. Please check your username and password.')
         })
     }
 
-    render () {
+    render() {
         return (
             <div className="container">
                 <div className="row">
